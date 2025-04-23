@@ -1,5 +1,8 @@
 # 1) Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años, deberá mostrar un mensaje en pantalla que diga “Es mayor de edad”.
 
+
+
+
 usuario_edad = int(input("ingresa tu edad: "))
 
 if usuario_edad >= 18:
@@ -9,6 +12,8 @@ if usuario_edad >= 18:
 
 
 # 2) Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6, deberá mostrar por pantalla un mensaje que diga “Aprobado”; en caso contrario deberá mostrar el mensaje “Desaprobado”.
+
+
 
 nota = float(input("Ingresa tu nota: "))
 
@@ -21,6 +26,9 @@ else:
 
 
 # 3) Escribir un programa que permita ingresar solo números pares. Si el usuario ingresa un número par, imprimir por en pantalla el mensaje "Ha ingresado un número par"; en caso contrario, imprimir por pantalla "Por favor, ingrese un número par". Nota: investigar el uso del operador de módulo (%) en Python para evaluar si un número es par o impar.
+
+
+
 
 num_par = float(input("Ingresa un numero par: "))
 
@@ -37,6 +45,8 @@ else: print("Por favor, ingrese un número par")
 # ● Adulto/a joven: mayor o igual que 18 años y menor que 30 años.
 # ● Adulto/a: mayor o igual que 30 años.
 
+
+
 edad = int(input("Ingresa tu edad: "))
 
 if edad < 12:
@@ -52,6 +62,9 @@ elif edad >= 30:
 
 
 # 5) Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14). Si el usuario ingresa una contraseña de longitud adecuada, imprimir por en pantalla el mensaje "Ha ingresado una contraseña correcta"; en caso contrario, imprimir por pantalla "Por favor, ingrese una contraseña de entre 8 y 14 caracteres". Nota: investigue el uso de la función len() en Python para evaluar la cantidad de elementos que tiene un iterable tal como una lista o un string.
+
+
+
 
 clave = input("Ingresa tu contraseña: ")
 clave_long = len(clave)
@@ -121,6 +134,8 @@ else:
 
 # 7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por pantalla.
 
+
+
 palabra = input("ingrese una frase o palabra: ")
 
 ult_letra = palabra[-1:]
@@ -143,6 +158,7 @@ print(palabra)
 # El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el
 # usuario e imprimir el resultado por pantalla. Nota: investigue uso de las funciones upper(),
 # lower() y title() de Python para convertir entre mayúsculas y minúsculas.
+
 
 
 nombre = input("Ingrese su nombre: ")
@@ -222,7 +238,10 @@ hemisferio = input("Ingrese su hemisferio (N/S): ").lower()
 mes = input("Ingresa el mes (nombre): ").lower()
 dia = int(input("Ingresa el dia: "))
 
+
+# verifica que los dias sean validos
 if dia >= 1 and dia <= 31:
+  # verica en que mes, dia y hemisferio se encuentra para despues imprimir por pantalla
   if (mes == "diciembre" and dia >= 21) or mes == "enero" or mes == "febrero" or (mes == "marzo" and dia <= 20):
     if hemisferio == "n":
         print("Se encuentra en invierno")
